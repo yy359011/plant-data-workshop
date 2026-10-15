@@ -1,0 +1,5 @@
+sample_id,species,analyte,value,unit,data_notice
+DEMO-CHL-001,拟南芥,叶绿素a,0.91,mg/g鲜重,合成演示数据，不作为真实科研结论
+DEMO-CHL-002,拟南芥,叶绿素b,0.34,mg/g鲜重,合成演示数据，不作为真实科研结论
+DEMO-CHL-003,拟南芥,叶绿素a,0.83,,合成演示数据，不作为真实科研结论
+DEMO-CHL-004,水稻,叶绿素a,1.02,mg/g鲜重,合成演示数据，不作为真实科研结论

@@ -1,0 +1,4 @@
+sample_id,species,observation_day,day_unit,total_seeds,germinated_seeds,count_unit,temperature,temperature_unit,data_notice
+DEMO-GERM-001,拟南芥,2,d,20,7,粒,22,°C,合成演示数据，不作为真实科研结论
+DEMO-GERM-002,拟南芥,4,d,20,15,粒,22,°C,合成演示数据，不作为真实科研结论
+DEMO-GERM-003,水稻,3,d,20,12,粒,25,°C,合成演示数据，不作为真实科研结论
