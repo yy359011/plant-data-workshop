@@ -1,0 +1,114 @@
+{
+  "title": "Pothos deleonii：菲律宾新种描述与植物性状（真实论文）",
+  "original_title": "Pothos deleonii (Araceae, Potheae, Pothoideae), a new species from Bukidnon, Mindanao, Philippines",
+  "citation": "Medecilo-Guiang MMP, Cabactulan D (2024) Pothos deleonii (Araceae, Potheae, Pothoideae), a new species from Bukidnon, Mindanao, Philippines. PhytoKeys 247: 183–190. https://doi.org/10.3897/phytokeys.247.130721",
+  "authors": [
+    "Maria Melanie P. Medecilo-Guiang",
+    "Derek Cabactulan"
+  ],
+  "year": 2024,
+  "doi": "10.3897/phytokeys.247.130721",
+  "url": "https://phytokeys.pensoft.net/article/130721/",
+  "pdf_url": "https://phytokeys.pensoft.net/article/130721/download/pdf/",
+  "license": "self_owned",
+  "license_label": "CC BY 4.0（已获开放许可，非本平台著作权）",
+  "license_notice": "© Maria Melanie P. Medecilo-Guiang & Derek Cabactulan, 2024. 原论文在PDF第1页明确标注CC BY 4.0；图1保留原图署名，图2绘图者Larie Dianco见致谢。再分发需署名、附许可链接并说明修改。",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "purpose": "both",
+  "processing_note": "原PDF从出版社直接下载；逐页文字取自PDF文本层，图1从PDF内嵌对象提取；图2从PDF图版区域渲染为PNG，保留矢量分图字母、比例尺与图注。中文章节Markdown、解读及字段为Codex依据原文准备的演示修订，并非平台已调用所配置模型；默认待人工核对。",
+  "retrieved_at": "2026-10-09",
+  "pdf_sha256": "497b8d9c715216df8ddd794e0bb282d1f8434b68c7ab4fd6eac36cc9f858eb74",
+  "page_count": 8,
+  "extraction_schema": [
+    {
+      "key": "scientific_name",
+      "label": "植物学名",
+      "type": "text",
+      "description": "提取本文所描述目标植物的完整学名，勿填比较物种。"
+    },
+    {
+      "key": "family",
+      "label": "科名",
+      "type": "text",
+      "description": "植物所属科的拉丁名称。"
+    },
+    {
+      "key": "growth_form",
+      "label": "生活型",
+      "type": "text",
+      "description": "从描述正文提取生活型，不能只凭一幅照片推断。"
+    },
+    {
+      "key": "leaf_shape",
+      "label": "叶形",
+      "type": "text",
+      "description": "目标植物叶片形状。"
+    },
+    {
+      "key": "leaf_margin",
+      "label": "叶缘",
+      "type": "text",
+      "description": "叶缘形态。"
+    },
+    {
+      "key": "leaf_apex",
+      "label": "叶尖",
+      "type": "text",
+      "description": "叶尖形态。"
+    },
+    {
+      "key": "leaf_length_min_cm",
+      "label": "叶长下限（cm）",
+      "type": "number",
+      "description": "原文以cm记录的成熟叶片长度下限。"
+    },
+    {
+      "key": "leaf_length_max_cm",
+      "label": "叶长上限（cm）",
+      "type": "number",
+      "description": "原文以cm记录的成熟叶片长度上限。"
+    },
+    {
+      "key": "leaf_width_cm",
+      "label": "叶宽范围（cm）",
+      "type": "text",
+      "description": "保留原文叶宽范围，不把范围压成单一值。"
+    },
+    {
+      "key": "peduncle_length_cm",
+      "label": "花序梗长度（cm）",
+      "type": "text",
+      "description": "保留花序梗长度范围。"
+    },
+    {
+      "key": "spathe_color",
+      "label": "佛焰苞颜色",
+      "type": "text",
+      "description": "区分新鲜与将萎蔫时颜色，不混作单一色。"
+    },
+    {
+      "key": "holotype_accession",
+      "label": "正模式标本编号",
+      "type": "text",
+      "description": "提取herbarium accession，不把采集号误作标本馆编号。"
+    },
+    {
+      "key": "infructescence_observed",
+      "label": "是否观察到果序",
+      "type": "boolean",
+      "description": "仅根据作者明确说明填true/false；未说明则null。"
+    },
+    {
+      "key": "fruit_color",
+      "label": "果实颜色",
+      "type": "text",
+      "description": "仅有明确文字或可核对图像证据时填写。"
+    },
+    {
+      "key": "chromosome_count",
+      "label": "染色体数",
+      "type": "number",
+      "description": "只提取明确报道的数目；原文未给出则null。"
+    }
+  ]
+}

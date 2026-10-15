@@ -1,0 +1,421 @@
+{
+  "chapters": [
+    {
+      "title": "新种描述、形态与生境",
+      "page_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "result": {
+        "facts": [
+          {
+            "text": "# Pothos deleonii：新种描述、形态与生境\n\n## 文献与研究对象\n\nMedecilo-Guiang 与 Cabactulan 于 2024 年在 PhytoKeys 247:183–190 描述天南星科新种 Pothos deleonii。作者依据营养器官与生殖器官的形态进行分类鉴别。",
+            "source_pages": [
+              1,
+              2
+            ]
+          },
+          {
+            "text": "## 材料与模式标本\n\n模式材料于 2024 年 2 月 18 日采自菲律宾 Bukidnon Province, Manolo Fortich。采集号为 MPMG1005；正模式保存在 PNH，标本馆编号 PNH259023；等模式保存在 CMUH。原文说明配图和描述取自野外新鲜材料，因此图1不是腊叶标本扫描图。",
+            "source_pages": [
+              2
+            ]
+          },
+          {
+            "text": "## 营养器官性状\n\n植物无毛，为以根攀援的纤维质藤本。叶片长圆状披针形，偶呈镰状，不对称、革质，叶缘全缘；叶长 15.5–26.3 cm，宽 4–6 cm；叶尖渐尖至尾状，叶基锐尖至钝，幼叶可稍呈心形。叶正面微有光泽、深绿色，背面淡绿色。",
+            "source_pages": [
+              2,
+              3
+            ]
+          },
+          {
+            "text": "## 生殖器官性状\n\n花序单生、延长、下折并下垂。花序梗长 16–18 cm，直径 2–3 mm。佛焰苞宽卵形、凹至兜状，长 9.2–10.0 cm，宽 4.5–5.5 cm；新鲜时深酒红色，将萎蔫时紫黑色。肉穗花序近无柄、长圆柱形、深紫色，长 6.4–6.9 cm，约为佛焰苞全长的 7/10。作者明确写明未观察到果序（Infructescence not observed）。",
+            "source_pages": [
+              5
+            ]
+          },
+          {
+            "text": "## 分布与生态边界\n\n论文记录来自 Mt. Kitanglad 北麓两个受限地点，海拔分别为 1,150 m 和 1,270 m；生境为退化的开阔林冠龙脑香科次生林。精确地点由作者出于保护考虑隐去。论文在500公顷调查区内记录12个成熟个体，并据此提出当时的保护评价；这些是论文的调查记录，不代表后续年份的实时种群状态。",
+            "source_pages": [
+              5
+            ]
+          },
+          {
+            "text": "## 证据与使用边界\n\n形态尺寸取自原文描述，不从无对应比例尺的照片估算。叶形、叶缘和叶尖可参照图1相应分图，尺寸仍以文字测量记录为依据。本文未给出果实颜色或染色体数，这些自定义字段保持为空。",
+            "source_pages": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "figures": [
+          {
+            "image_path": "images/figure-1.jpg",
+            "caption": "图1｜野外植株及器官照片（原刊 Figure 1）",
+            "interpretation": "A：带花枝的植株；B：叶尖；C：叶基；D：叶脉；E：花序；F：肉穗花序细节。按原图注归类，图像用于与形态描述交叉核对，不据此补造尺寸。",
+            "source_pages": [
+              3
+            ]
+          },
+          {
+            "image_path": "images/figure-2.png",
+            "caption": "图2｜植株与器官线描（原刊 Figure 2）",
+            "interpretation": "A：整株；B：叶序；C：叶脉；D：花序；E：肉穗花序细节。原图分别为B、D、E提供10 mm、15 mm、5 mm比例尺；这些标尺不应直接套用到其他分图。",
+            "source_pages": [
+              4
+            ]
+          }
+        ],
+        "tables": [],
+        "sft_samples": [],
+        "interpretation": {
+          "text": "这组页面的核心是利用一组可复核的形态组合支持新种描述，而不是仅凭照片颜色作鉴定。叶部性状与近缘种相似，原文将较长花序梗、佛焰苞形状与颜色、肉穗花序比例等生殖器官性状作为重要比较依据。整理成知识库时，名称、模式标本、叶部和花序性状宜分别成块并共用文献及页码来源；做字段抽取时，应保留范围、单位和材料状态。这里的“未观察到果序”是作者的观察边界，不能改写为该植物不结果，果色与染色体数也不能由其他物种补填。此段为Codex的归纳解释，需要与原论文核对。",
+          "source_pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "structured_fields": [
+          {
+            "key": "scientific_name",
+            "value": "Pothos deleonii M.P.Medecilo-Guiang & D.Cabactulan",
+            "status": "found",
+            "evidence": "Pothos deleonii M.P .Medecilo-Guiang & D.Cabactulan, sp. nov.",
+            "source_pages": [
+              2
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "family",
+            "value": "Araceae",
+            "status": "found",
+            "evidence": "Pothos deleonii (Araceae, Potheae, Pothoideae)",
+            "source_pages": [
+              1
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "growth_form",
+            "value": "无毛、以根攀援的纤维质藤本",
+            "status": "found",
+            "evidence": "Plant growth glabrous, root climbing, fibrous liana.",
+            "source_pages": [
+              2
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_shape",
+            "value": "长圆状披针形，偶呈镰状",
+            "status": "found",
+            "evidence": "Lamina oblong-lan-ceolate, occasionally falcate",
+            "source_pages": [
+              2,
+              3
+            ],
+            "image_paths": [
+              "images/figure-1.jpg"
+            ]
+          },
+          {
+            "key": "leaf_margin",
+            "value": "全缘",
+            "status": "found",
+            "evidence": "margins entire",
+            "source_pages": [
+              2,
+              3
+            ],
+            "image_paths": [
+              "images/figure-1.jpg"
+            ]
+          },
+          {
+            "key": "leaf_apex",
+            "value": "渐尖至尾状",
+            "status": "found",
+            "evidence": "apex acuminate to caudate and thickened",
+            "source_pages": [
+              3
+            ],
+            "image_paths": [
+              "images/figure-1.jpg"
+            ]
+          },
+          {
+            "key": "leaf_length_min_cm",
+            "value": 15.5,
+            "status": "found",
+            "evidence": "15.5–26.3 cm long by 4–6 cm wide",
+            "source_pages": [
+              3
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_length_max_cm",
+            "value": 26.3,
+            "status": "found",
+            "evidence": "15.5–26.3 cm long by 4–6 cm wide",
+            "source_pages": [
+              3
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_width_cm",
+            "value": "4–6",
+            "status": "found",
+            "evidence": "15.5–26.3 cm long by 4–6 cm wide",
+            "source_pages": [
+              3
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "peduncle_length_cm",
+            "value": "16–18",
+            "status": "found",
+            "evidence": "16–18 cm long by 2–3 mm in diameter.",
+            "source_pages": [
+              5
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "spathe_color",
+            "value": "新鲜时深酒红色；将萎蔫时紫黑色",
+            "status": "found",
+            "evidence": "dark wine red when fresh and purplish black when near wilting",
+            "source_pages": [
+              3,
+              5
+            ],
+            "image_paths": [
+              "images/figure-1.jpg"
+            ]
+          },
+          {
+            "key": "holotype_accession",
+            "value": "PNH259023",
+            "status": "found",
+            "evidence": "MPMG1005 (holotype PNH! PNH259023); isotypes CMUH!)",
+            "source_pages": [
+              2
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "infructescence_observed",
+            "value": false,
+            "status": "found",
+            "evidence": "Infructescence not observed.",
+            "source_pages": [
+              5
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "fruit_color",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "chromosome_count",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          }
+        ],
+        "warnings": [
+          "真实来源；此结果为Codex预置整理，未调用平台配置的模型，默认待核对。",
+          "论文第2页Diagnosis与第5页Description给出的花尺寸表述不同，演示未将花尺寸写入结构化字段。",
+          "图1为野外植株与器官照片；不把它标记为腊叶标本照片。",
+          "不对作者隐去的精确分布点做补全。"
+        ]
+      }
+    },
+    {
+      "title": "形态对照表、研究披露与文献依据",
+      "page_numbers": [
+        6,
+        7,
+        8
+      ],
+      "result": {
+        "facts": [
+          {
+            "text": "# 形态对照、研究披露与参考文献\n\n## 形态对照表\n\n原刊表1比较 P. deleonii、P. philippinensis、P. kingii 和 P. atropurpurascens，列出叶、花序梗、佛焰苞、肉穗花序和花的性状。表中叶部若干行标题与描述语义存在疑似错位，应与前面的Description逐项核对，不能直接把整表按行无条件转换为字段。",
+            "source_pages": [
+              6
+            ]
+          },
+          {
+            "text": "## 研究披露\n\n作者声明无利益冲突，致谢了保护机构、许可机构和线描作者Larie Dianco。数据可用性说明称支持研究结论的数据均在正文中；参考文献位于原刊189–190页。",
+            "source_pages": [
+              6,
+              7,
+              8
+            ]
+          }
+        ],
+        "figures": [],
+        "tables": [],
+        "sft_samples": [],
+        "interpretation": {
+          "text": "这一部分更适合作为来源、对照物种及研究披露资料。比较表包含多个物种，自动抽取必须锁定目标物种列，并检查行标题与正文的一致性；参考文献标题中的物种或数值不能当作本研究的观察值。为避免对疑似错位的表格作无依据修复，本演示只提取可明确对应目标物种的学名和佛焰苞颜色；其他字段不凭疑似错位行补填。",
+          "source_pages": [
+            6,
+            7,
+            8
+          ]
+        },
+        "structured_fields": [
+          {
+            "key": "scientific_name",
+            "value": "Pothos deleonii",
+            "status": "found",
+            "evidence": "Pothos deleonii",
+            "source_pages": [
+              6
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "family",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "growth_form",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_shape",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_margin",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_apex",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_length_min_cm",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_length_max_cm",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "leaf_width_cm",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "peduncle_length_cm",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "spathe_color",
+            "value": "深酒红色至深紫色",
+            "status": "found",
+            "evidence": "dark wine red to dark purple",
+            "source_pages": [
+              6
+            ],
+            "image_paths": []
+          },
+          {
+            "key": "holotype_accession",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "infructescence_observed",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "fruit_color",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          },
+          {
+            "key": "chromosome_count",
+            "value": null,
+            "status": "not_found",
+            "evidence": "",
+            "source_pages": [],
+            "image_paths": []
+          }
+        ],
+        "warnings": [
+          "表1原件中叶部若干行疑似错位，保留原表、不自动校正。",
+          "本章字段为空表示本次没有提取为字段，不表示全文从未记载相应性状。"
+        ]
+      }
+    }
+  ]
+}

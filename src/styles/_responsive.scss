@@ -1,0 +1,39 @@
+// 补充响应式断点
+// 设计稿以 1920 为主；在原有断点（1550/1300/1280/1100/960/768/480）之间，
+// 补齐用户点名的 1440 / 1200 / 1024 / 992 档位，仅做密度与间距微调，不改布局结构。
+// 1024 与 992 大部分已由既有 max-width:1100 / max-width:960 规则接管，此处只补缝隙。
+@use "./variables" as *;
+
+// 1440：中等桌面
+@media (max-width: $bp-max-1440) {
+  .global-search { width: 250px; }
+  .pp-heading h1 { font-size: 22px; }
+  .pp-stat-grid { gap: 12px; }
+  .pp-stat-grid > div { padding: 16px; }
+  .dl-source-grid { gap: 15px; }
+  .topbar { gap: 20px; }
+}
+
+// 1200：小桌面
+@media (max-width: $bp-max-1200) {
+  .global-search { width: 200px; }
+  .topbar { gap: 14px; }
+  .topbar-right { gap: 12px; }
+  .page-heading h1 { font-size: 27px; }
+  .dl-source-grid { gap: 13px; }
+  .dl-document-grid { gap: 13px; }
+}
+
+// 1024：横屏平板（衔接既有 max-width:1100）
+@media (max-width: $bp-max-1024) {
+  .el-dialog { --el-dialog-width: 92vw; }
+  .pp-admin-layout { grid-template-columns: 240px minmax(0, 1fr); }
+  .pp-heading h1 { font-size: 21px; }
+}
+
+// 992：窄桌面（衔接既有 max-width:960）
+@media (max-width: $bp-max-992) {
+  .el-dialog { --el-dialog-width: 96vw; }
+  .page-heading h1 { font-size: 26px; }
+  .pp-stat-grid > div { padding: 15px; }
+}

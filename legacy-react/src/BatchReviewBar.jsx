@@ -1,0 +1,14 @@
+import React,{useEffect,useState} from 'react';
+import {IconShieldCheck,IconArrowLeft} from '@tabler/icons-react';
+import {platformAPI} from './PlatformAuth.jsx';
+export function BatchReviewBar({batchId,chapter,dirty,processing,go,setToast,onChanged,sftReviewed}){
+ const [detail,setDetail]=useState(null),[message,setMessage]=useState(''),[busy,setBusy]=useState(false),[error,setError]=useState(''),[open,setOpen]=useState(false);
+ async function load(){try{setDetail(await platformAPI('/platform/batches/'+batchId));setError('')}catch(e){setError(e.message)}}
+ useEffect(()=>{load();setMessage('')},[batchId,chapter?.id,chapter?.revision]);
+ const b=detail?.batch||detail, samples=detail?.samples||b?.samples||[], sample=samples.find(s=>s.chapter_id===chapter?.id),reviews=detail?.reviews||b?.reviews||[];
+ const expected=sample?.expected_revision??sample?.revision, stale=sample?.stale||expected!==chapter?.revision;
+ const reviewed=sample?.outcome?{outcome:sample.outcome,message:sample.message}:null;
+ const disabled=busy||dirty||processing||!sample||stale;
+ async function record(outcome){setBusy(true);setError('');try{await platformAPI('/platform/batches/'+batchId+'/reviews',{chapter_id:chapter.id,expected_revision:expected,outcome,message});await load();await onChanged?.();setToast(outcome==='pass'?'本章抽检通过，已记录复核人和版本。':'问题已记录到当前批次。')}catch(e){if(e.status===409)await load();setError(e.message)}finally{setBusy(false)}}
+ return <section className="ph-batch-review"><header><IconShieldCheck size={20}/><strong>批次抽检 · {String(b?.name||'载入中').replace(/[（(](?:真实论文|章节管线合成示例|合成演示|测试文献)[）)]/g,'').trim()}</strong><button className="button teal-button push-right" aria-expanded={open} onClick={()=>setOpen(!open)}>{open?'收起抽检记录':reviewed?'查看抽检结论':'记录本章抽检'}</button><button className="text-button" onClick={()=>go('batches?batch='+batchId)}><IconArrowLeft size={15}/>返回批次</button></header>{open&&<>{error&&<div className="ph-error">{error}</div>}{sample?<><p>{stale?'本章内容已变化，原抽样版本已失效。请返回批次重新抽样，保留已有问题记录。':`本次抽样版本 r${expected} · 对照 PDF 核查正文、解读、字段和图表。`}{dirty?' 请先保存右侧修改。':''}{reviewed?` 已记录：${reviewed.outcome==='pass'?'通过':'发现问题'}。`:''}</p><textarea aria-label="本次抽检说明" value={message} onChange={e=>setMessage(e.target.value)} placeholder="记录发现的问题，例如叶片宽度单位有误、图号引用不一致。通过时可填写核查说明。" maxLength={4000}/><div className="inline"><button className="button" disabled={disabled||!message.trim()} onClick={()=>record('issue')}>记录问题，待修正</button><button className="button teal-button" disabled={disabled||reviewed?.outcome==='pass'||(chapter?.result?.sft_samples?.length>0&&!sftReviewed)} onClick={()=>record('pass')}>本章抽检通过</button><span className="ph-subtitle">操作人、批次和版本自动留痕</span></div>{chapter?.result?.sft_samples?.length>0&&!sftReviewed&&<p>请在下方“核对图表、问答与来源”中核对问答候选后，再提交通过。</p>}</>:<p>当前章节不在本次随机样本中。可查看或修订内容；抽检结论请在本批已抽中的章节中提交。</p>}</>}</section>
+}

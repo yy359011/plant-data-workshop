@@ -1,0 +1,78 @@
+// Element Plus 主题映射：把组件库的调色板对齐到项目品牌色。
+// 仅覆盖 CSS 变量，不改 EP 源样式；在 Element Plus 官方样式之后加载。
+@use "./variables" as *;
+
+:root {
+  // 主色 → 品牌蓝紫 #4F6EF7（EP 的 light/dark 层级按同比例混白/混黑推导）
+  --el-color-primary: #{$blue};
+  --el-color-primary-light-3: color-mix(in srgb, #{$blue} 70%, white);
+  --el-color-primary-light-5: color-mix(in srgb, #{$blue} 50%, white);
+  --el-color-primary-light-7: color-mix(in srgb, #{$blue} 30%, white);
+  --el-color-primary-light-8: color-mix(in srgb, #{$blue} 20%, white);
+  --el-color-primary-light-9: color-mix(in srgb, #{$blue} 10%, white);
+  --el-color-primary-dark-2: color-mix(in srgb, #{$blue} 80%, black);
+
+  // 语义色对齐原有 badge 配色
+  --el-color-success: #{$success};
+  --el-color-success-light-3: color-mix(in srgb, #{$success} 70%, white);
+  --el-color-success-light-5: color-mix(in srgb, #{$success} 50%, white);
+  --el-color-success-light-7: color-mix(in srgb, #{$success} 30%, white);
+  --el-color-success-light-8: color-mix(in srgb, #{$success} 20%, white);
+  --el-color-success-light-9: color-mix(in srgb, #{$success} 10%, white);
+  --el-color-success-dark-2: color-mix(in srgb, #{$success} 80%, black);
+
+  --el-color-warning: #{$warning};
+  --el-color-warning-light-3: color-mix(in srgb, #{$warning} 70%, white);
+  --el-color-warning-light-5: color-mix(in srgb, #{$warning} 50%, white);
+  --el-color-warning-light-7: color-mix(in srgb, #{$warning} 30%, white);
+  --el-color-warning-light-8: color-mix(in srgb, #{$warning} 20%, white);
+  --el-color-warning-light-9: color-mix(in srgb, #{$warning} 10%, white);
+  --el-color-warning-dark-2: color-mix(in srgb, #{$warning} 80%, black);
+
+  --el-color-danger: #{$danger};
+  --el-color-danger-light-3: color-mix(in srgb, #{$danger} 70%, white);
+  --el-color-danger-light-5: color-mix(in srgb, #{$danger} 50%, white);
+  --el-color-danger-light-7: color-mix(in srgb, #{$danger} 30%, white);
+  --el-color-danger-light-8: color-mix(in srgb, #{$danger} 20%, white);
+  --el-color-danger-light-9: color-mix(in srgb, #{$danger} 10%, white);
+  --el-color-danger-dark-2: color-mix(in srgb, #{$danger} 80%, black);
+
+  --el-color-error: #{$danger};
+  --el-color-error-light-3: color-mix(in srgb, #{$danger} 70%, white);
+  --el-color-error-light-5: color-mix(in srgb, #{$danger} 50%, white);
+  --el-color-error-light-7: color-mix(in srgb, #{$danger} 30%, white);
+  --el-color-error-light-8: color-mix(in srgb, #{$danger} 20%, white);
+  --el-color-error-light-9: color-mix(in srgb, #{$danger} 10%, white);
+  --el-color-error-dark-2: color-mix(in srgb, #{$danger} 80%, black);
+
+  --el-color-info: #{$info};
+  --el-color-info-light-3: color-mix(in srgb, #{$info} 70%, white);
+  --el-color-info-light-5: color-mix(in srgb, #{$info} 50%, white);
+  --el-color-info-light-7: color-mix(in srgb, #{$info} 30%, white);
+  --el-color-info-light-8: color-mix(in srgb, #{$info} 20%, white);
+  --el-color-info-light-9: color-mix(in srgb, #{$info} 10%, white);
+  --el-color-info-dark-2: color-mix(in srgb, #{$info} 80%, black);
+
+  // 文本 / 边框 / 圆角 / 字体对齐参考图1（蓝紫主色 + 中性文字）
+  --el-text-color-primary: #{$navy};
+  --el-text-color-regular: #4B5563;
+  --el-text-color-secondary: #{$muted};
+  --el-text-color-placeholder: #9CA3AF;
+  --el-border-color: #{$line};
+  --el-border-color-light: #F3F4F6;
+  --el-border-color-lighter: #F9FAFB;
+  --el-fill-color-blank: #fff;
+  --el-border-radius-base: 8px;
+  --el-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont,
+    "Microsoft YaHei UI", "Microsoft YaHei", Roboto, "Helvetica Neue",
+    sans-serif;
+
+  // 弹窗与消息层级：高于原有 .modal-backdrop(80)/.toast(100)，低于调试样式
+  --el-index-popper: 900;
+  --el-index-top: 910;
+}
+
+// EP 弹窗内文字继承页面正文色
+.el-dialog {
+  color: #1F2937;
+}

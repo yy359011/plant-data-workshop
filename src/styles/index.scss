@@ -1,0 +1,11 @@
+// 样式总入口（仅项目分片；Element Plus 官方样式在 main.ts 中先行 import，
+// 保证本项目分片与主题映射覆盖在官方样式之后输出）。
+@use "base";
+@use "document-library";
+@use "chapter-workshop";
+@use "platform-pages";
+@use "platform-shell";
+@use "pdf-viewer";
+@use "element-plus";
+@use "responsive";
+@use "brand";
